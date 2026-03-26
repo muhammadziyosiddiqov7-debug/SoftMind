@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Profil — SoftMind</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+  <header class="header">
+    <h2 class="logo">SoftMind</h2>
+    <nav>
+      <a id="asos" href="index.html"><i class="fa-regular fa-compass"></i> Asosiy</a>
+
+      <a id="bosh" href="home.html" class="active">
+        <i class="fa-solid fa-house"></i> Bosh sahifa
+      </a>
+      <a id="bosh" href="./prof.html" class="active">
+        <i class="fa-solid fa-user"></i>Profile
+      </a>
+      <a href="./profil.html"><i class="fa-solid fa-table"></i>Statistik</a>
+    </nav>
+  </header>
+
+  <main class="profile-page">
+
+
+    <!-- INFO -->
+    <section class="diagram-info">
+      <h2>🌍 Dunyodagi AI platformalar statistikasi</h2>
+      <p>
+        Quyidagi diagrammada sun’iy intellekt platformalarining
+        global mashhurlik darajasi (% asosida) ko‘rsatilgan.
+      </p>
+    </section>
+
+
+    <!-- CHART -->
+    <section class="chart-box">
+      <canvas id="aiChart"></canvas>
+    </section>
+
+
+    <div class="filters">
+      <select id="typeSelect">
+        <option value="all">🌐 Barcha AI lar</option>
+        <option value="chat">💬 Chat AI</option>
+        <option value="image">🖼 Rasm yaratish</option>
+        <option value="code">💻 Kod yozish</option>
+        <option value="video">🎥 Video AI</option>
+        <option value="audio">🎧 Audio AI</option>
+        <option value="other">⚙ Boshqa AI</option>
+      </select>
+    </div>
+
+
+    <div class="top-bar">
+      <h1 class="title">Sun’iy Intellektlar Katalogi</h1>
+
+      <input type="text" id="searchInput" placeholder="🔍 AI nomini qidiring...">
+    </div>
+
+    <div class="ai-grid" id="aiGrid"></div>
+
+    <p class="empty" id="emptyText">Hech qanday AI topilmadi 😕</p>
+
+
+  </main>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

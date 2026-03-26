@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SoftMind — Bosh sahifa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h2 class="logo">SoftMind</h2>
+
+    <nav>
+      <a id="asos" href="index.html"><i class="fa-regular fa-compass"></i> Asosiy</a>
+
+      <a id="bosh" href="home.html" class="active">
+        <i class="fa-solid fa-house"></i> Bosh sahifa
+      </a>
+      <a id="bosh" href="./prof.html" class="active">
+        <i class="fa-solid fa-user"></i>Profile
+      </a>
+      <a href="./profil.html"><i class="fa-solid fa-table"></i>Statistik</a>
+    </nav>
+
+        <a href="./login.html"><button class="logout" onclick="logout()">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </button></a>
+    </header>
+
+    <main class="home">
+
+        <!-- AI HUB -->
+        <section class="ai-hub">
+            <h1>Barcha AI lar havolalari va ishlatish funksiyalari</h1>
+            <p>
+                SoftMind sizga turli sun’iy intellekt vositalariga
+                ishonchli va tartibli kirish imkonini beradi.
+            </p>
+
+            <div class="ai-links">
+                <a class="ai-card" href="#">🤖 AI Chat</a>
+                <a class="ai-card" href="#">🖼️ AI Rasm</a>
+                <a class="ai-card" href="#">✍️ AI Matn</a>
+                <a class="ai-card" href="#">📊 AI Tahlil</a>
+                <a class="ai-card" href="#">🎧 AI Ovoz</a>
+                <a class="ai-card" href="#">📚 AI O‘rganish</a>
+            </div>
+        </section>
+
+        <!-- RO‘YXATDAN O‘TISH -->
+        <section class="register">
+            <h2>Ro‘yxatdan o‘tish</h2>
+            <p>
+                Platformadan foydalanish uchun
+                telefon raqamingizni tasdiqlashingiz kerak.
+            </p>
+
+            <div class="phone-box">
+                <input id="phone" type="tel" placeholder="+998 XX XXX XX XX">
+                <button onclick="sendCode()">Kod yuborish</button>
+            </div>
+
+            <div class="code-box">
+                <input id="code" type="text" placeholder="Tasdiqlash kodi">
+                <button onclick="verifyCode()">Tasdiqlash</button>
+            </div>
+        </section>
+
+        <!-- SAYT HAQIDA -->
+        <section class="about-link">
+            <h2>SoftMind nima?</h2>
+            <p>
+                Bu sahifada platformaning maqsadi,
+                xavfsizlik yondashuvi va kelajak rejalarimiz haqida
+                batafsil ma’lumot berilgan.
+            </p>
+            <a href="about.html" class="about-btn">
+                Sayt haqida batafsil
+            </a>
+        </section>
+
+        <!-- YO‘NALTIRUVCHI -->
+        <section class="guide">
+            <h2>Qayerdan boshlash kerak?</h2>
+            <ul>
+                <li>🔹 AI xizmatni tanlang</li>
+                <li>🔹 Telefon raqamni tasdiqlang</li>
+                <li>🔹 Xavfsiz foydalanishni boshlang</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
